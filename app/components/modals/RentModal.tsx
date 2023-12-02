@@ -66,7 +66,6 @@ const RentModal = () => {
   );
 
   const setCustomValue = (id: string, value: any) => {
-    console.log(id, value);
     setValue(id, value, {
       shouldValidate: true,
       shouldDirty: true,
