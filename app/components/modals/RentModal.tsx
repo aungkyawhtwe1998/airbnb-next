@@ -89,8 +89,11 @@ const RentModal = () => {
       router.refresh();
       reset();
       setStep(STEPS.CATEGORY);
+      setIsLoading(false);
       rentModal.onClose();
+
     }).catch(()=>{
+      setIsLoading(false);
       toast.error('Something went wrong.');
     })
   }
