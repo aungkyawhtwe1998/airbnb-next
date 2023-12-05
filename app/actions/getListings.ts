@@ -42,7 +42,7 @@ export default async function getListings( params: ILisitngsParams) {
     }
 
     if(locationValue){
-      query.locationVlaue = locationValue;
+      query.locationValue = locationValue;
     }
 
     if(startDate){
